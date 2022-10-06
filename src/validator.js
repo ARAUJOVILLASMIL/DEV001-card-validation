@@ -3,13 +3,14 @@ const validator = {
   // ...
   isValid: (numerotarjeta) => {
     //6543210987654321
-    // numero de tarjeta en arreglo lon que manda el usuario//
-    const numinver = numerotarjeta.split("")
+    // numero de tarjeta en arreglo lo que manda el usuario (split/separar(//
+    const numinver = numerotarjeta.replaceAll(" ","").split("")
+    
 
     // arreglo que guarda los numero sumados y miltiplicadosx2 y por 1
     let resultado = []
 
-    // este for recorre el arreglo de nume de tarjeta
+    // este for recorre el arreglo de numero de tarjeta
     for ( let i=0; i < numinver.length; i++ ){
 
     // este if solo multiplica los numeros x2
@@ -25,7 +26,7 @@ const validator = {
       // esto se hace convirtiendo en texto(string) y luego ese string pasa arreglo(12=>"12"=>["1"2"])
         let sumadosdigitos = multiplicacion.toString().split('')
 
-        // este let guarda la soma del arreglo (12=>"12"=>["1"2"] =3)
+        // este let guarda la suma del arreglo (12=>"12"=>["1"2"] =3)
         let suma = 0
         
         //este for recorre el arreglo de sumadosdigitos 1 y 2 "sumadosdigitos.length" el for iria por 1 primero y luego por 2 
@@ -35,6 +36,7 @@ const validator = {
           suma += parseInt(sumadosdigitos[i])
         } 
         // este es el resultado de 1+2 es decir 3 y se guarda en el arreglo resultado
+        //con push nos devuelve el nuevo array
         resultado.push(suma)
 
       } else {
@@ -43,7 +45,7 @@ const validator = {
         resultado.push(multiplicacion)
       } 
      }else {
-         // este else es el camino de los numeros que NO se tienen ue multiplicar por 2
+         // este else es el camino de los numeros que NO se tienen que multiplicar por 2
         //de igual forma se guarda el numero en "resultado"
         resultado.push(numinver[i])
         
