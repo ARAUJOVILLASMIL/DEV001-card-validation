@@ -12,11 +12,11 @@ function capturarnumero(){
 // esta funcion valida el numero que el usuario ingresa.
  let valido=validator.isValid(numero)
 if (valido){
-    alert ("es valido")    
+    alert ("Compra Exitosa")    
 }
 else {
-    alert("no es valido")
-}
+    alert("Compra fallida")
+}15245215222
 
 }
 //esta funcion es la que va tapar los numeros enmascarar

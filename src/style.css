@@ -4,8 +4,9 @@
     padding: 50;
   }
 
-  .centrame{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  .centrame {
+    color: rgb(11, 167, 11);
+    font-family: 'Times New Roman', Times, serif;
     font-size: smaller;
     font-style: oblique ;
     font-stretch: ultra-expanded;
@@ -17,21 +18,41 @@
   }
 
 body{
-    background-color: rgb(185, 185, 228);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif
     
   }
+
+  .header{
+    color:  rgb(11, 167, 11);
+    font-size: 20px;
+    font-weight: bold ;
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  }
+
+  .header img{
+    width: 100px;
+  }
+
   main{
+    background: url(img/comidados.jpeg) left, url(img/comesano.jpeg) center, url(img/logocomida.jpeg) right; 
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: contain;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;                            
     align-items: center;
     
   }
   
   input{
-    padding: 10px;
-    border: none;
-    display: block;
+    padding: 12px;
+    border: .5px solid #7F8C8D;
+    display: block ;
     margin: 5px;
     width: 98%;
   }
@@ -60,14 +81,20 @@ body{
     
   }
   .tarjeta{
-    background: #3a7bd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+    /*background: #3a7bd5;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-
+    margin-top: 30px;
     width: 450px;
+    color: white;
+    border-radius: 20px;
     height:280px ;
-    padding: 18px;
+    padding: 20px;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -90,3 +117,22 @@ body{
     align-items: center;
 
   }
+  .footer{
+  
+    text-align: center;
+    background-color: rgb(11, 167, 11);
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+  }
+
+.footer a{
+  color: white; 
+  text-decoration: none;
+ 
+}
+.comesano span {
+  color: rgb(170, 5, 5);
+ border: 20px;
+}
