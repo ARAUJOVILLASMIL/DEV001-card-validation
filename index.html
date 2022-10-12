@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body> 
+    <header class="header">
+      <img src="img/logo.jpeg" alt="">
+      <p>Confirma tu compra</p>
+    </header>
+    <div class="centrame"> 
+      <h1> Ingresa tus datos para tu pago</h1>
+    </div> 
+   <main>
+    <section class="tarjeta"> 
+      <img src="img/chip-tarjeta (1).png" alt="chip"> 
+      <p class="numerotarjeta">
+        <span>####</span>
+        <span>####</span>
+        <span>####</span>
+        <span id= "ultimoscuatro">5263</span>
+      </p>
+      <p class="validarfecha"> VALID THRUS <span id="mes">MM</span>/<span id="year">YYYY</span></p>
+ 
+      <div class="logovisa">
+       <p class="name_card" id="nombreusuario">Nombre y Apellido</p> 
+       <img src="img/logo-visa.png" alt="visa">
+      </div>
+ 
+    
+     </section>
+ 
+
+ 
+    <section class="formulario"> 
+     <form> 
+       <input type="text" placeholder="Nombre Y Apellido" class ="nombre_tarjeta" id="imputusuario">
+       <input type="text" maxlength="16" placeholder="Numero de Tarjeta" class="numero_tarjeta" id="numero">
+       <div class="fecha">
+         <input type="text" maxlength="4" placeholder="YYYY" class="tdc1" id="imputyear">
+         <input type="text" maxlength="2" placeholder="MM" class="tdc1" id="imputmes">
+         <input type="text" maxlength="3" placeholder="CVV" class="tdc1">
+       </div>
+       <button type="button" class="validar" id="validar">
+         <spam>Confirmar compra</spam>
+       </button>
+ 
+     </form>
+    </section>
+      
+   </main>
+    <footer class="footer"> 
+     <a class="comesano" href="https://www.instagram.com/comesanomcbo/"> Siguenos en Instagram como <span>@comesanomcbo</span></a>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
